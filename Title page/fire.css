@@ -1,0 +1,27 @@
+.fire-title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    font-family: 'Brush Script MT', sans-serif;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* background: url('fire.png'); 你可以替换为适当的火特效图像 */
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: black;
+    animation: fireAnimation 2s infinite alternate;
+
+  }
+  
+  @keyframes fireAnimation {
+    0% {
+      text-shadow: 0 0 10px #FF4500, 0 0 20px #FF4500, 0 0 30px #FF4500, 0 0 40px #FF4500;
+    }
+    100% {
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
+    }
+  }
